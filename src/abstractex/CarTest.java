@@ -1,7 +1,6 @@
 package abstractex;
 
-public class CarTest extends Car{
-	super
+public class CarTest{
 	public static void main(String[] args) {
 		Bus bus = new Bus();
 		AutoCar autoCar = new AutoCar();
