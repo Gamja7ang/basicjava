@@ -36,5 +36,10 @@ public class MemberArrayList {
 		}
 		System.out.println();
 	}
+	
+	public void insertMember(Member member, int index) {
+		arrayList.add(index, member);
+		return;
+	}
 
 }

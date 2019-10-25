@@ -22,6 +22,9 @@ public class MemberArrayListTest {
 		memberArrayList.removeMember(memberHong.getMemberId());
 		memberArrayList.showAllMember();
 		
+		memberArrayList.insertMember(memberHong, 0);
+		memberArrayList.showAllMember();
+		
 
 	}
 
