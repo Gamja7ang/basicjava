@@ -1,7 +1,6 @@
 package singleton;
 
 public class CarFactory {
-	private static int CarNum = 10000;
 	
 	private static CarFactory instance = new CarFactory();
 	private CarFactory() {}
@@ -10,23 +9,15 @@ public class CarFactory {
 		
 	public static CarFactory getInstance() {
 		if(instance == null) {
-			instance = new Car();
+			instance = new CarFactory();
 		}
-		return null;
+		return instance;
 	}
 	
-	public static String Car {
-		
+	public Car createCar() {
+		Car car = new Car();
+		return car;
 	}
-	
-	public static int getCarNum() {
-		return CarNum;
-	}
-
-	public static void setCarNum(int CarNum) {
-		CarFactory.CarNum = CarNum;
-	}
-
 
 
 }

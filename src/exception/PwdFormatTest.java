@@ -11,7 +11,7 @@ public class PwdFormatTest {
 		if(pass == null) {
 			throw new IDFormatException("비밀번호는 null일 수 없습니다.");
 		}
-		else if(pass.length() <= 5) {
+		else if(pass.length() < 5) {
 			throw new IDFormatException("비밀번호는 5자 이상이어야 합니다.");
 		}
 		else if(pass.matches("[a-zA-Z]+")) {
